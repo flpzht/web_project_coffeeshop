@@ -98,27 +98,23 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
-  gap: 4px;
-  position: absolute;
-  bottom: 30px;
-  left: 80px;
-}
-div.header__paragraph {
-  display: flex;
-  flex-direction: column;
-}
-.header__paragraph {
-  margin-top: auto;
-  line-height: 24px;
-  margin: 0;
-  font-weight: 500;
-  color: #838383;
-}
-.header__paragraph_right {
+  align-items: flex-end;
   position: absolute;
   bottom: 40px;
+  left: 80px;
   right: 80px;
+}
+.header__footer div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.header__paragraph {
+  margin: 0;
+  padding: 0;
+  line-height: 20px;
+  font-weight: 500;
+  color: #838383;
 }
 .recipes {
   background-color: #0a2750;

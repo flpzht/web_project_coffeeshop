@@ -1,6 +1,3 @@
-  /* font-family: 'Inter', 'Arial', sans-serif; */
-  /* font-family: 'Noto Serif', 'Times New Roman', serif; */
-
 .page {
   min-width: 1100px;
   max-width: 1600px;
@@ -169,4 +166,104 @@
   font-weight: 500;
   font-size: 20px;
   line-height: 30px;
+}
+
+.reservation {
+  background-color: #d9e7ff;
+  background-image: url(../images/background_reservation.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+}
+.reservation__title {
+  font-family: "Inter", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 52px;
+  margin: 0;
+}
+.reservation__form {
+  margin: 80px 0 120px 0;
+}
+.form__fieldset {
+  max-width: 385px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+.form__label {
+  font-family: "Inter", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 8px;
+}
+.form__input {
+  width: 100%;
+  height: 60px;
+  margin-bottom: 32px;
+  border-radius: 4px;
+  border: #838383 solid 1px;
+  font-family: "Inter", "Arial", sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  padding: 15px 20px;
+  box-sizing: border-box;
+}
+.form__input::placeholder {
+  color: #838383;
+}
+.form__button {
+  max-width: 385px;
+  height: 60px;
+  margin-bottom: 32px;
+  background-color: #2f80ed;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  font-family: "Inter", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  cursor: pointer;
+}
+.form__button:hover:enabled {
+  background-color: #1c5edb;
+  opacity: 0.7;
+  transition: 0.5s;
+}
+.form__label--checkbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  font-family: "Inter", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+.form__checkbox {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 2px;
+  background: transparent;
+  border: #838383 solid 1px;
+  cursor: pointer;
+}
+.form__checkbox:checked {
+  background: #2F80ED;
+}
+.form__checkbox:checked::after {
+  background: #2F80ED;
+  content: url(../images/check.svg);
+  color: #fff;
 }
